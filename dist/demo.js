@@ -66,7 +66,7 @@
 	  _reactDom2.default.render(_react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_ReactFBLike2.default, { language: 'ko_KR', href: 'https://zerocho.herokuapp.com', appId: '717589285046812' })
+	    _react2.default.createElement(_ReactFBLike2.default, { language: 'en_US', href: 'https://zerocho.herokuapp.com', appId: '717589285046812' })
 	  ), rootNode);
 	});
 
