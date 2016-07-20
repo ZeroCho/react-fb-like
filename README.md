@@ -1,0 +1,41 @@
+#React FB Like
+React component for facebook like button!
+
+##How to install
+```
+npm install react-fb-like --save
+```
+
+##How to use
+```
+var ReactFBLike = require('react-fb-like');
+<ReactFBLike language="ko_KR" appId="520712144760137" />
+```
+
+ES2015 style
+```
+import ReactFBLike from 'react-fb-like';
+```
+
+##Props
+You can use all props that facebook supports. But be careful! You should use **camelCase**. And attribute **ref** is changed to **reference** because it is a reserved word in React.
+[Official Documentation](https://developers.facebook.com/docs/plugins/like-button)
+###Required props
+-language(such as en_US, ko_KR, fr_FR)
+-appId
+###Other props
+-action
+-colorscheme
+-href
+-kidDirectedSite
+-layout
+-reference(which is ref in facebook)
+-share
+-showFaces
+-width
+
+## Wanna Contribute?
+Please contribute to this package via **Pull Request**, or you can open **Issues**!
+
+## License
+MIT

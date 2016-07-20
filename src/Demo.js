@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactFBLike from './ReactFBLike';
+
+document.addEventListener('DOMContentLoaded', () => {
+  let rootNode = document.createElement('div');
+  document.body.appendChild(rootNode);
+  ReactDOM.render(
+    <div>
+      <ReactFBLike language="ko_KR" href="https://zerocho.herokuapp.com" appId="717589285046812"/>
+    </div>,
+    rootNode
+  );
+});
