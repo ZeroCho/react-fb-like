@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from "react";
 
-export default class ReactFBLike extends Component {
+class ReactFBLike extends Component {
   static propTypes = {
     appId: PropTypes.string.isRequired,
     language: PropTypes.string.isRequired,
@@ -59,3 +59,5 @@ export default class ReactFBLike extends Component {
     );
   }
 }
+
+export default ReactFBLike;

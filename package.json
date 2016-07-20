@@ -1,8 +1,8 @@
 {
   "name": "react-fb-like",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React component for facebook like button",
-  "main": "dist/ReactFBLike.js",
+  "main": "dist/react-fb-like.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && webpack --progess --colors --debug --ouput-pathinfo --display-error-details",
