@@ -27,7 +27,7 @@ class ReactFBLike extends Component {
     kidDirectedSite: false
   };
 
-  componentWillMount() {
+  componentDidMount() {
     const { language, appId } = this.props;
     if (document && typeof document !== 'undefined') {
       (function (d, s, id) {
