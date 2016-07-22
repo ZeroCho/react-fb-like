@@ -10,7 +10,7 @@ class ReactFBLike extends Component {
     size: PropTypes.string,
     share: PropTypes.bool,
     showFaces: PropTypes.bool,
-    width: PropTypes.oneOf(PropTypes.string, PropTypes.number),
+    width: PropTypes.oneOfType(PropTypes.string, PropTypes.number),
     reference: PropTypes.string,
     colorscheme: PropTypes.string,
     kidDirectedSite: PropTypes.bool
