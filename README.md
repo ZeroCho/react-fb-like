@@ -1,8 +1,9 @@
 #React FB Like
 React component for facebook like button!
-[Live Demo](https://zerocho.herokuapp.com/portfolio/ReactFBLike)
 
 ##How to install
+[Live Demo](https://zerocho.herokuapp.com/portfolio/ReactFBLike)
+
 ```
 npm install react-fb-like --save
 ```
@@ -10,13 +11,18 @@ npm install react-fb-like --save
 ##How to use
 ```
 var ReactFBLike = require('react-fb-like');
-<ReactFBLike language="ko_KR" appId="520712144760137" />
+<ReactFBLike language="ko_KR" appId="717589285046812" />
 ```
 
 ES2015 style
 ```
 import ReactFBLike from 'react-fb-like';
 ```
+
+##It renders only once
+If you go to the another page and come back to where this component locates, sometimes this component disappears.
+This is because this component is rendered only once when FB script loads.
+So if you want to manually show this component again, you should call `FB.XFBML.parse();`
 
 ##Result
 ![reactfblike](https://cloud.githubusercontent.com/assets/10962668/16993907/47b99278-4ee0-11e6-8f58-ef4442acf263.png)
@@ -28,6 +34,7 @@ You can use all props that facebook supports. But be careful! You should use **c
 ###Required props
 - language(such as en_US, ko_KR, fr_FR)
 - appId
+[supported language](https://www.facebook.com/translations/FacebookLocales.xml)
 
 ###Other props
 - action

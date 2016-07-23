@@ -5,7 +5,7 @@ class ReactFBLike extends Component {
     appId: PropTypes.string.isRequired,
     language: PropTypes.string.isRequired,
     href: PropTypes.string,
-    layout: PropTypes.string,
+    layout: PropTypes.oneOf(['standard', 'box_count', 'button_count', 'button']),
     action: PropTypes.string,
     size: PropTypes.string,
     share: PropTypes.bool,
