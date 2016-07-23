@@ -1,5 +1,6 @@
 #React FB Like
 React component for facebook like button!
+[Live Demo](https://zerocho.herokuapp.com/portfolio/ReactFBLike)
 
 ##How to install
 ```
@@ -38,6 +39,9 @@ You can use all props that facebook supports. But be careful! You should use **c
 - share
 - showFaces
 - width
+
+## Demo
+[Live Demo](https://zerocho.herokuapp.com/portfolio/ReactFBLike)
 
 ## Wanna Contribute?
 Please contribute to this package via **Pull Request**, or you can open **Issues**!

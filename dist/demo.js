@@ -21145,7 +21145,6 @@
 	      if (document && typeof document !== 'undefined') {
 	        (function (d, s, id) {
 	          var fjs = d.getElementsByTagName(s)[d.getElementsByTagName(s).length - 1];
-	          console.log(fjs);
 	          if (d.getElementById(id)) return;
 	          var js = d.createElement(s);
 	          js.id = id;
