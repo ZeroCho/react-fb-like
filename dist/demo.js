@@ -21144,10 +21144,10 @@
 	
 	      if (document && typeof document !== 'undefined') {
 	        (function (d, s, id) {
-	          var js,
-	              fjs = d.getElementsByTagName(s)[0];
+	          var fjs = d.getElementsByTagName(s)[d.getElementsByTagName(s).length - 1];
+	          console.log(fjs);
 	          if (d.getElementById(id)) return;
-	          js = d.createElement(s);
+	          var js = d.createElement(s);
 	          js.id = id;
 	          js.src = '//connect.facebook.net/' + language + '/sdk.js#xfbml=1&version=v2.7&appId=' + appId;
 	          fjs.parentNode.insertBefore(js, fjs);
@@ -21197,7 +21197,7 @@
 	  size: _react.PropTypes.string,
 	  share: _react.PropTypes.bool,
 	  showFaces: _react.PropTypes.bool,
-	  width: _react.PropTypes.oneOf(_react.PropTypes.string, _react.PropTypes.number),
+	  width: _react.PropTypes.oneOfType(_react.PropTypes.string, _react.PropTypes.number),
 	  reference: _react.PropTypes.string,
 	  colorscheme: _react.PropTypes.string,
 	  kidDirectedSite: _react.PropTypes.bool

@@ -31,9 +31,9 @@ class ReactFBLike extends Component {
     const { language, appId } = this.props;
     if (document && typeof document !== 'undefined') {
       (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+        let fjs = d.getElementsByTagName(s)[d.getElementsByTagName(s).length - 1];
         if (d.getElementById(id)) return;
-        js = d.createElement(s);
+        const js = d.createElement(s);
         js.id = id;
         js.src = `//connect.facebook.net/${language}/sdk.js#xfbml=1&version=v2.7&appId=${appId}`;
         fjs.parentNode.insertBefore(js, fjs);
