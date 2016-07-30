@@ -21191,7 +21191,7 @@
 	  appId: _react.PropTypes.string.isRequired,
 	  language: _react.PropTypes.string.isRequired,
 	  href: _react.PropTypes.string,
-	  layout: _react.PropTypes.string,
+	  layout: _react.PropTypes.oneOf(['standard', 'box_count', 'button_count', 'button']),
 	  action: _react.PropTypes.string,
 	  size: _react.PropTypes.string,
 	  share: _react.PropTypes.bool,
