@@ -21196,7 +21196,7 @@
 	  size: _react.PropTypes.string,
 	  share: _react.PropTypes.bool,
 	  showFaces: _react.PropTypes.bool,
-	  width: _react.PropTypes.oneOfType(_react.PropTypes.string, _react.PropTypes.number),
+	  width: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number]),
 	  reference: _react.PropTypes.string,
 	  colorscheme: _react.PropTypes.string,
 	  kidDirectedSite: _react.PropTypes.bool
