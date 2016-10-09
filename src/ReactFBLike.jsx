@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component, PropTypes } from 'react';
 
 class ReactFBLike extends Component {
   static propTypes = {
@@ -13,7 +13,7 @@ class ReactFBLike extends Component {
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     reference: PropTypes.string,
     colorscheme: PropTypes.string,
-    kidDirectedSite: PropTypes.bool
+    kidDirectedSite: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -24,20 +24,20 @@ class ReactFBLike extends Component {
     share: true,
     showFaces: true,
     colorscheme: 'light',
-    kidDirectedSite: false
+    kidDirectedSite: false,
   };
 
   componentDidMount() {
     const { language, appId } = this.props;
     if (document && typeof document !== 'undefined') {
-      (function (d, s, id) {
-        let fjs = d.getElementsByTagName(s)[d.getElementsByTagName(s).length - 1];
+      ((d, s, id) => {
+        const fjs = d.getElementsByTagName(s)[d.getElementsByTagName(s).length - 1];
         if (d.getElementById(id)) return;
         const js = d.createElement(s);
         js.id = id;
         js.src = `//connect.facebook.net/${language}/sdk.js#xfbml=1&version=v2.7&appId=${appId}`;
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, 'script', 'facebook-jssdk');
     }
   }
 
@@ -56,7 +56,7 @@ class ReactFBLike extends Component {
         data-ref={reference}
         data-colorscheme={colorscheme}
         data-kid-directed-site={kidDirectedSite}
-      ></div>
+      />
     );
   }
 }
