@@ -1,5 +1,5 @@
 #React FB Like
-React component for facebook like button!
+React component for facebook Like and Share button!
 
 ##How to install
 [Live Demo](https://zerocho.herokuapp.com/portfolio/ReactFBLike)
@@ -32,9 +32,8 @@ You can use all props that facebook supports. But be careful! You should use **c
 [Official Documentation](https://developers.facebook.com/docs/plugins/like-button)
 
 ###Required props
-- language(such as en_US, ko_KR, fr_FR)
+- language(such as en_US, ko_KR, fr_FR) [supported language](https://www.facebook.com/translations/FacebookLocales.xml)
 - appId
-[supported language](https://www.facebook.com/translations/FacebookLocales.xml)
 
 ###Other props
 - action

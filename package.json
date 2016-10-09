@@ -1,6 +1,6 @@
 {
   "name": "react-fb-like",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "React component for facebook like button",
   "main": "dist/react-fb-like.js",
   "scripts": {
