@@ -2,7 +2,7 @@
 React component for facebook Like and Share button!
 
 ##How to install
-[Live Demo](https://zerocho.herokuapp.com/portfolio/ReactFBLike)
+[Live Demo](https://www.zerocho.com/portfolio/ReactFBLike)
 
 ```
 npm install react-fb-like --save

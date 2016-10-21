@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(rootNode);
   ReactDOM.render(
     <div>
-      <ReactFBLike language="en_US" href="https://zerocho.herokuapp.com" appId="717589285046812" />
+      <ReactFBLike language="en_US" href="https://www.zerocho.com" appId="717589285046812" />
     </div>,
     rootNode
   );

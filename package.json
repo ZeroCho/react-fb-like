@@ -1,6 +1,6 @@
 {
   "name": "react-fb-like",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "React component for facebook like button",
   "main": "dist/react-fb-like.js",
   "scripts": {
@@ -41,12 +41,12 @@
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-1": "^6.16.0",
-    "eslint": "^3.7.1",
+    "eslint": "^3.8.1",
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.3.0",
+    "eslint-plugin-react": "^6.4.1",
     "rimraf": "^2.5.4",
     "webpack": "^1.13.2"
   }
