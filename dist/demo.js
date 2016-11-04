@@ -21473,9 +21473,10 @@
 	  _createClass(ReactFBLike, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      var _props = this.props;
-	      var language = _props.language;
-	      var appId = _props.appId;
+	      var _props = this.props,
+	          language = _props.language,
+	          appId = _props.appId,
+	          version = _props.version;
 	
 	      if (document && typeof document !== 'undefined') {
 	        (function (d, s, id) {
@@ -21483,7 +21484,7 @@
 	          if (d.getElementById(id)) return;
 	          var js = d.createElement(s);
 	          js.id = id;
-	          js.src = '//connect.facebook.net/' + language + '/sdk.js#xfbml=1&version=v2.8&appId=' + appId;
+	          js.src = '//connect.facebook.net/' + language + '/sdk.js#xfbml=1&version=' + version + '&appId=' + appId;
 	          fjs.parentNode.insertBefore(js, fjs);
 	        })(document, 'script', 'facebook-jssdk');
 	      }
@@ -21491,17 +21492,17 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _props2 = this.props;
-	      var href = _props2.href;
-	      var layout = _props2.layout;
-	      var action = _props2.action;
-	      var size = _props2.size;
-	      var share = _props2.share;
-	      var showFaces = _props2.showFaces;
-	      var reference = _props2.reference;
-	      var width = _props2.width;
-	      var colorscheme = _props2.colorscheme;
-	      var kidDirectedSite = _props2.kidDirectedSite;
+	      var _props2 = this.props,
+	          href = _props2.href,
+	          layout = _props2.layout,
+	          action = _props2.action,
+	          size = _props2.size,
+	          share = _props2.share,
+	          showFaces = _props2.showFaces,
+	          reference = _props2.reference,
+	          width = _props2.width,
+	          colorscheme = _props2.colorscheme,
+	          kidDirectedSite = _props2.kidDirectedSite;
 	
 	      return _react2.default.createElement('div', {
 	        className: 'fb-like',
@@ -21524,6 +21525,7 @@
 	
 	ReactFBLike.propTypes = {
 	  appId: _react.PropTypes.string.isRequired,
+	  version: _react.PropTypes.string.isRequired,
 	  language: _react.PropTypes.string.isRequired,
 	  href: _react.PropTypes.string,
 	  layout: _react.PropTypes.oneOf(['standard', 'box_count', 'button_count', 'button']),
@@ -21538,6 +21540,7 @@
 	};
 	ReactFBLike.defaultProps = {
 	  language: 'en_US',
+	  version: 'v2.8',
 	  layout: 'standard',
 	  action: 'like',
 	  size: 'small',
