@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 class ReactFBLike extends Component {
   static propTypes = {
     appId: PropTypes.string.isRequired,
+    version: PropTypes.string.isRequired,
     language: PropTypes.string.isRequired,
     href: PropTypes.string,
     layout: PropTypes.oneOf(['standard', 'box_count', 'button_count', 'button']),
@@ -18,6 +19,7 @@ class ReactFBLike extends Component {
 
   static defaultProps = {
     language: 'en_US',
+    version: 'v2.8',
     layout: 'standard',
     action: 'like',
     size: 'small',
@@ -28,14 +30,14 @@ class ReactFBLike extends Component {
   };
 
   componentDidMount() {
-    const { language, appId } = this.props;
+    const { language, appId, version } = this.props;
     if (document && typeof document !== 'undefined') {
       ((d, s, id) => {
         const fjs = d.getElementsByTagName(s)[d.getElementsByTagName(s).length - 1];
         if (d.getElementById(id)) return;
         const js = d.createElement(s);
         js.id = id;
-        js.src = `//connect.facebook.net/${language}/sdk.js#xfbml=1&version=v2.7&appId=${appId}`;
+        js.src = `//connect.facebook.net/${language}/sdk.js#xfbml=1&version=${version}&appId=${appId}`;
         fjs.parentNode.insertBefore(js, fjs);
       })(document, 'script', 'facebook-jssdk');
     }

@@ -21483,7 +21483,7 @@
 	          if (d.getElementById(id)) return;
 	          var js = d.createElement(s);
 	          js.id = id;
-	          js.src = '//connect.facebook.net/' + language + '/sdk.js#xfbml=1&version=v2.7&appId=' + appId;
+	          js.src = '//connect.facebook.net/' + language + '/sdk.js#xfbml=1&version=v2.8&appId=' + appId;
 	          fjs.parentNode.insertBefore(js, fjs);
 	        })(document, 'script', 'facebook-jssdk');
 	      }
