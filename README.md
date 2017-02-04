@@ -1,4 +1,6 @@
 #React FB Like
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ZeroCho/react-fb-like.svg)](https://greenkeeper.io/)
 React component for facebook Like and Share button!
 
 ##How to install
