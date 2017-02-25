@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var loaders = [
-  { test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ },
+const path = require('path');
+const webpack = require('webpack');
+const rules = [
+  { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
 ];
 
 module.exports = [{
@@ -9,19 +9,25 @@ module.exports = [{
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'react-fb-like.js',
-    libraryTarget: 'commonjs2'
   },
   devtool: 'source-map',
-  module: { loaders: loaders },
+  module: { rules },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    modules: ['node_modules', 'src'],
+    extensions: ['.json', '.js', '.jsx'],
   },
-  externals: ['react', 'react-dom'],
   plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
     new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
       compress: {
-        warnings: false
-      }
+        warnings: false,
+      },
     }),
   ]
 }, {
@@ -31,8 +37,23 @@ module.exports = [{
     filename: 'demo.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    modules: ['node_modules', 'src'],
+    extensions: ['.json', '.js', '.jsx'],
   },
   devtool: 'source-map',
-  module: { loaders: loaders },
+  module: { rules },
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      compress: {
+        warnings: false,
+      },
+    }),
+  ]
 }];
