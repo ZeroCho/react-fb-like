@@ -9,6 +9,7 @@ module.exports = [{
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'react-fb-like.js',
+    libraryTarget: 'commonjs2',
   },
   devtool: 'source-map',
   module: { rules },
