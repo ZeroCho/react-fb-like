@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <div>
       <ReactFBLike language="en_US" href="https://www.zerocho.com" appId="717589285046812" />
     </div>,
-    rootNode
+    rootNode,
   );
 });

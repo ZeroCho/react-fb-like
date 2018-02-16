@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 class ReactFBLike extends Component {
   static propTypes = {
     appId: PropTypes.string.isRequired,
-    version: PropTypes.string.isRequired,
-    language: PropTypes.string.isRequired,
+    version: PropTypes.string,
+    language: PropTypes.string,
     href: PropTypes.string,
     layout: PropTypes.oneOf(['standard', 'box_count', 'button_count', 'button']),
     action: PropTypes.string,
@@ -20,7 +20,7 @@ class ReactFBLike extends Component {
 
   static defaultProps = {
     language: 'en_US',
-    version: 'v2.8',
+    version: 'v2.12',
     layout: 'standard',
     action: 'like',
     size: 'small',
@@ -28,6 +28,9 @@ class ReactFBLike extends Component {
     showFaces: true,
     colorscheme: 'light',
     kidDirectedSite: false,
+    href: null,
+    width: null,
+    reference: null,
   };
 
   componentDidMount() {

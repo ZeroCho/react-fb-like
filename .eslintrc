@@ -10,12 +10,12 @@
     }
   },
   "rules": {
-    "linebreak-style": ["error", "windows"],
     "import/no-unresolved": 0,
     "global-require": 0,
     "no-console": 0,
     "max-len": 0,
-    "no-param-reassign": ["error", { "props": false }]
+    "no-param-reassign": ["error", { "props": false }],
+    "object-curly-newline" : ["error", { "multiline": true }]
   },
   "plugins": [
     "react",

@@ -11,7 +11,7 @@ npm install react-fb-like --save
 ##How to use
 ```
 var ReactFBLike = require('react-fb-like');
-<ReactFBLike language="ko_KR" appId="717589285046812" version="v2.8" />
+<ReactFBLike language="ko_KR" appId="717589285046812" version="v2.12" />
 ```
 
 ES2015 style
@@ -32,9 +32,9 @@ You can use all props that facebook supports. But be careful! You should use **c
 [Official Documentation](https://developers.facebook.com/docs/plugins/like-button)
 
 ###Required props
-- language(such as en_US, ko_KR, fr_FR) [supported language](https://www.facebook.com/translations/FacebookLocales.xml)
+- language(such as en_US, ko_KR, fr_FR) [supported language](https://developers.facebook.com/docs/messenger-platform/messenger-profile/supported-locales)
 - appId
-- version: version of facebook-jssdk, default: 'v2.8'
+- version: version of facebook-jssdk, default: 'v2.12'
 
 ###Other props
 - action
@@ -42,7 +42,7 @@ You can use all props that facebook supports. But be careful! You should use **c
 - href
 - kidDirectedSite
 - layout
-- reference(which is ref in facebook)
+- reference(which is a **ref** attribute in facebook)
 - share
 - showFaces
 - width
