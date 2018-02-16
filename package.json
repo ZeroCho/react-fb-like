@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && webpack --colors --debug --display-error-details",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "lint": "eslint"
   },
   "repository": {
