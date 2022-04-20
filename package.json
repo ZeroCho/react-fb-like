@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/zerocho/react-fb-like#readme",
   "peerDependencies": {
-    "react": "^15.3.0 || ^16",
-    "react-dom": "^15.3.0 || ^16"
+    "react": "^15.3.0 || ^16 || ^17",
+    "react-dom": "^15.3.0 || ^16 || ^17"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
